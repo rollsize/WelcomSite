@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    font-family: Verdana;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    height: 64px;
+    width: 128px;
+}
+button:hover{
+    color: red;
+    border: 2px solid red;
+}  
+button:active{
+    border: 2px solid lightcoral;
+    color: lightcoral;
+}
+.button-block a{
+    /* background-image: url("../src/back.png");
+    background-position: center;
+    background-size: cover; */
+    box-shadow: 0 2px 0 #661000, inset 0 0 8px rgb(255 210 0 / 10%), inset 0 1px 0 #fab81b, inset 0 -1px 0 #ef4511;
+    background: linear-gradient(to bottom,#fab81b 0%,#ff7e00 100%) no-repeat 0,linear-gradient(to bottom,#fab81b 0%,#ff7e00 100%) no-repeat 100%,
+        #ff7e00 linear-gradient(to bottom,#ff7e00 0%,#c2530a 100%) no-repeat;
+    color: white;
+    padding: 16px 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.button-block a:visited{
+    color: white;
+}  
+.button-block a:hover{
+    color: #ef4511;
+    border: 2px solid #ff7e00;
+}
+.button-block a:active{
+    color:#ef4511;
+    border: 2px solid #ef4511;
+}
+
+h3{
+    margin: 0;
+}
+
+input{
+    margin: 8px 0px;
+    width: 200px;
+}
+
+.content{
+    background-image: url("../src/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	backdrop-filter: blur(3px);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.text{
+    color: #aaaaab;
+    opacity: 0.9;
+    backdrop-filter: blur(1px);
+    font-size: 120px;
+    margin: 32px;
+}
+.text:hover{
+    color: white;
+    opacity: 1;
+}
+
+.formbox{
+    margin: 0px 48px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+}
+.formbox a{
+    width: fit-content;
+}
+.formbox a:link{
+    color: black;
+    text-decoration: none;
+}
+.formbox a:visited{
+    color: black;
+}  
+.formbox a:hover{
+    color: red;
+}
+.formbox a:active{
+    color: lightcoral;
+}
+.formbox a::before{
+    content: url("../src/logo_res.png")
+}
+.formbox a::after{
+    content: url("../src/logo_res.png")
+}
+.second-line{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.date-part input{
+    width: 70%;
+}
+.pin-part input{
+    width: 65%;
+}
